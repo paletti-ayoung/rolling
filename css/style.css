@@ -258,7 +258,7 @@ justify-content: space-between;
 
 }
 .hotel-left-inner,.hotel-right-inner{
-    padding: 12rem;
+    padding: 10rem;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -269,6 +269,8 @@ justify-content: space-between;
     background-image: url('../img/08_familyhotel/haevichi_bg.png');
     background-size: 100%;
     width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 .hotel-right{
@@ -276,12 +278,14 @@ justify-content: space-between;
     background-size: 100%;
     width: 50%;
     justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .arrow{
     margin-top: 3rem;
 }
 footer{
-    margin-top: 2rem;
+
     background-color: black;
     height: 80px;
 }
