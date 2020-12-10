@@ -227,10 +227,59 @@ justify-content: space-between;
     margin-top: 1rem;
     font-size: 1.2rem;
 }
-.promotion-
+.facilities-layout,.news-layout{
+    background-color: rgb(9, 36, 9);
+}
+.crousel-layout{
+    background-image: url('../img/06_facilities/facilities_bg.png');
+    display: flex;
+    margin-top: 10rem;
+    justify-content: center;    
+}
+.crousel-layout-inner{
+    display: flex;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.crousel-right{
+    background-color: white;
+    height: 100%;
+}
+.news-title{
+    text-align: center;
+    padding: 4rem 0;
+    font-size: 2.5rem
+}
+.news-sub-title{
+    text-overflow: ellipsis;
+}
+.hotel-layout{
+    display: flex;
 
+}
+.hotel-left-inner,.hotel-right-inner{
+    padding: 12rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
+.hotel-left{
+    background-image: url('../img/08_familyhotel/haevichi_bg.png');
+    background-size: 100%;
+    width: 50%;
 
+}
+.hotel-right{
+    background-image: url('../img/08_familyhotel/westin_bg.png');
+    background-size: 100%;
+    width: 50%;
+    justify-content: center;
+}
+.arrow{
+    margin-top: 3rem;
+}
 footer{
     margin-top: 2rem;
     background-color: black;
