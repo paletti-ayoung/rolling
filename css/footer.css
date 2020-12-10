@@ -1,0 +1,40 @@
+footer{
+    height: 42.7rem;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10rem;
+}
+.footer-right{
+    color: white;
+
+}
+.info{
+    color:#666666;
+    font-size: 1.4rem;
+    margin-top: 4rem;
+    line-height: 2.4rem;
+}
+
+.footer-bottom{
+display: flex;
+justify-content: space-between;
+margin-top: 8rem;
+border-top: 1px solid #a68164;
+}
+
+.ft-btm-left{
+display: flex;
+}
+.ft-btm-left div{
+color: #5a5959;
+    padding-top: 3rem;
+    margin-right: 2rem;
+}
+.ft-btm-right{
+padding-top: 3rem;
+
+}
+.ft-btm-right img{
+margin-right: 1rem;
+}
+

@@ -1,21 +1,34 @@
 
 ul{
     display: flex;
-}
-ul li{
+    justify-content: space-between;
+     border:3px solid aqua;
+    width: 100%;
     font-size: 2rem;
-    margin:0 1em 1em 0;
+
 }
+
+.left-menu:not(:last-child){
+    background-color: #18251b;
+    margin-right: 5rem;
+}
+
+.right-menu{
+    border:3px solid violet;
+    margin-right: 2.5rem;
+}
+
 
 .top-layout{
 background-image: url('../img/01_main/main_bg.png');
 background-repeat: no-repeat;
 background-size: 100%;
-height:50vw;
+height:800px;
+overflow: hidden;
 display: flex;
 flex-direction: column;
 margin: 0;
-padding:1rem;
+padding: 4rem 6.5rem 0 8.5rem;
 color: white;
 justify-content: space-between;
 }
@@ -23,7 +36,10 @@ justify-content: space-between;
 .center-menu, .logo{
     align-self: center;
 }
-
+.center-menu{
+    margin-right: 20rem;
+    margin-left: 30rem;
+}
 .logo{
     max-height: 100%;
 }
@@ -45,45 +61,46 @@ justify-content: space-between;
     
 }
 .top-sub-title{
-    font-size: 3vw;
+    font-size: 1.5vw;
 }
 .title{
-    font-size: 4vw;
+    font-size: 5vw;
     
 }
 .bottom-sub-title{
     margin:1em 0 0 1em;
-    font-size: 1.5vw;
+    font-size: 1vw;
+    
 }
 
 .bottom-layout{
     display: flex;
     justify-content: space-between;
-    font-size: 1.5rem;
+    font-size: 1vw;
+    margin-bottom: 10rem;
+
 }
 .main-title-layout{
     margin-bottom:6em;
 }
 .main-title{
-    color: rgb(184, 176, 63);
+    color: #a68164;
+    font-size: 4.5rem;
     text-align:center;
-  
 }
 
 .main-sub-title{
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     color: white;
     margin-top: 2em;
     text-align:center;
 
 
 }
-.main-title{
-    font-size: 2.5rem;
-}   
+
 
 .special-offers-layout{
-    background-color: rgb(9, 36, 9);
+    background-color:#18251b;
     padding-top: 20em;
     padding-bottom: 85em;
 
@@ -107,22 +124,23 @@ justify-content: space-between;
     font-size: 2rem;
 }
 .offers-desc{
-    color: #888;
+    color: #959595;
     line-height: 2rem;
     margin-top: 1rem;
 }
 .offers-date{
-    color:#999;
+    color:#6b6e6c;
     margin: 2rem 0;
 }
 .offers-btn{
-    border: 1px solid rgb(253, 228, 83);
-    color:rgb(253, 228, 83);
+    border: 1px solid #a68164;
+    color:#a68164;
     padding:1rem;
     font-size: 1.5rem;
     text-align: center;
     width: 15rem;
     margin-top: 5rem;
+    cursor: pointer;
 
 }
 .preview-layout{
@@ -154,9 +172,10 @@ justify-content: space-between;
 }
 .right-title{
     font-size: 8rem;
+    color: #a68164;
 }
 .right-sub-title{
-    color:#999;
+    color:#808683;
     font-size: 1.6rem;
 }
 .active-txt{
@@ -173,7 +192,7 @@ justify-content: space-between;
     margin-top: 20rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+
 }
 
 .both-side-line{
@@ -183,6 +202,7 @@ justify-content: space-between;
 .membership-component-layout{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .membership-component{
@@ -191,27 +211,38 @@ justify-content: space-between;
 }
 .membership-title{
     margin-top: 1.5rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: #a68164;
 }
 .membership-txt{
     margin-top: 1rem;
     font-size: 1.8rem;
+    color: #7c7c7c;
 }
 .hills-btn{
     text-align: center;
     color: white;
-    background-color: brown;
-    padding: 2rem  3rem;
-  align-items: center;
-  margin-top: 4rem;
-  font-size: 1.8rem;
+    background-color: #a68164;
+    padding: 2rem  5rem;
+    align-self: center;
+    margin-top: 8.5rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.hills-promotion{
+    margin-top: 11rem;
+    display: flex;
+    flex-direction: column;
+
 }
 .promotion-component-layout{
     display: flex;
     justify-content: center;
 }
 .promotion-component{
-    border: black solid 2px;
+    border: #a68164 solid 1px;
+    box-sizing: border-box;
+
     display: flex;
     flex-direction: column;
 }
@@ -222,13 +253,51 @@ justify-content: space-between;
 .promotion-component{
     margin:1.5rem;
     box-sizing: border-box;
+    background-color: white;
+}
+.promotion-txt-section{
+    margin-top: 3.6rem;
+    margin-left: 3rem;
+    margin-bottom: 4rem;
 }
 .promotion-top-title{
-    margin-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    color: #a68164;
 }
+.promotion-title{
+    font-size: 2.4rem;
+    color:#3c3c3c;
+ margin-top: 2rem;
+ margin-bottom: 3rem;
+ 
+ 
+}
+.promotion-date{
+    color: #a6a6a6;
+    margin-bottom: 5.5rem;
+    font-size: 1.55rem;
+}
+.promotion-btn{
+    color: #a68164;
+    font-size: 1.7rem;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.hills-promotion-btn{
+    color: #a68164;
+    font-size: 1.7rem;
+    text-align: center;
+    border:#a68164 solid 1px;
+    align-self: center;
+    padding:2rem 4rem;
+    margin-bottom: 20rem;
+    cursor: pointer;
+}
+
 .facilities-layout,.news-layout{
-    background-color: rgb(9, 36, 9);
+    background-color: #18251b;
+ /* background-image: url(data:image/png;base64,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); */
 }
 .crousel-layout{
     background-image: url('../img/06_facilities/facilities_bg.png');
@@ -246,15 +315,97 @@ justify-content: space-between;
     height: 100%;
 }
 .news-title{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 4rem 0;
-    font-size: 2.5rem
+    font-size: 4.6rem;
+    color:#a68164;
+}
+.btm-line{
+    border-top: 3px #a68164 solid;
+    width: 22rem;
+    text-align: center;
+    align-self: center;
+    margin-top: 0.5rem;
+}
+
+.crousel-right{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-left: 6rem;
+    padding-right: 12.7rem;
+
+}
+.crousel-top-txt{
+   color:#a68164;
+   font-size: 2.1rem;
+}
+.crousel-title{
+    font-size: 6rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3.2rem;
+
+}
+.crousel-btm-txt{
+color:#666666;
+font-size: 1.6rem;
+}
+.crousel-btn{
+    color:#a68164;
+    border:1px solid #a68164;
+    margin-top: 4.3rem;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 2rem 0;
+    width: 16rem;
 }
 .news-sub-title{
     text-overflow: ellipsis;
 }
+.news-layout-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-bottom: #38423b solid 1px;
+    margin-bottom: 4.5rem;
+
+}
+
+
+
+.news-left{
+    color: #959595;
+}
+.news-d{
+    font-size: 5.3rem;
+    
+}
+.news-y-m{
+    font-size: 1.7rem;
+}
+
+.news-right{
+    color: #767676;
+    margin-left: 6.5rem;
+}
+.news-right-title{
+    color: white;
+    font-size: 1.9rem;
+}
+.news-right-sub-title{
+    font-size: 1.5rem;
+}
+
 .hotel-layout{
     display: flex;
+
+}
+.hotel-left-inner{
+    text-align: center;
+
 
 }
 .hotel-left-inner,.hotel-right-inner{
