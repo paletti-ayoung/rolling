@@ -20,6 +20,7 @@ display: flex;
 justify-content: space-between;
 margin-top: 8rem;
 border-top: 1px solid #a68164;
+font-family: 'NotoSansCJKkr-DemiLight';
 }
 
 .ft-btm-left{
