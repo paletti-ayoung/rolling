@@ -13,6 +13,7 @@ footer{
     font-size: 1.4rem;
     margin-top: 4rem;
     line-height: 2.4rem;
+    font-family: 'NotoSansCJKkr-DemiLight';
 }
 
 .footer-bottom{
@@ -26,10 +27,21 @@ font-family: 'NotoSansCJKkr-DemiLight';
 .ft-btm-left{
 display: flex;
 }
+.footer-right li{
+    font-family: 'NotoSansCJKkr-DemiLight';
+}
+.footer-right li:not(:last-child):after{
+    content:"";
+    height: 0.5em;
+    border-right: 1px solid #5a5959;
+     margin-right: 2rem;
+     margin-left: 2rem;
+}
 .ft-btm-left div{
 color: #5a5959;
     padding-top: 3rem;
     margin-right: 2rem;
+    font-family: 'NotoSansCJKkr-DemiLight';
 }
 .ft-btm-right{
 padding-top: 3rem;

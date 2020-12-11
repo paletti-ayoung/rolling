@@ -1,10 +1,10 @@
 *{
-    font-family: 'Amiri-Regular';
+    font-family: 'Amiri', serif;
 }
 ul{
     display: flex;
     justify-content: space-between;
-     border:3px solid aqua;
+     /* border:3px solid aqua; */
     width: 100%;
     font-size: 2rem;
 
@@ -13,39 +13,57 @@ ul{
 .left-menu:not(:last-child){
     background-color: #18251b;
     margin-right: 5rem;
+    margin-top: -20rem;
 }
 .center-menu{
-    font-family: 'Amiri-Regular';
+    font-family: 'Amiri', serif;
+   
+}
+.center-menu li:not(:last-child){
+    margin-right: 4rem;
 }
 .right-menu{
-    border:3px solid violet;
+    margin-right: 8.5rem;
+    
+}
+.right-menu li:not(:last-child){
+    /* border:3px solid violet; */
     margin-right: 2.5rem;
-    font-family: 'NotoSansCJKkr-DemiLight';
+}
+.right-menu li{
+    font-family: 'NotoSansCJKkr-Regular';
 }
 
 .main-layout{
     display: flex;
     flex-direction: column;
-    margin : 0 auto;
     max-width: 1920px;
+    margin:auto;
+   
 }
 .top-layout{
     background-image: url('../img/01_main/main_bg.png');
+    background-position: top center;
     background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 100%;
+    margin: 0 auto;
     top:0;
-    left:0;
+    height: 1000px;
+    width: 100%;
     position: absolute;
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 4rem 6.5rem 0 8.5rem;
     color: white;
     justify-content: space-between;
 }
+
+.menu-layout{
+    justify-content: space-between;
+    display: flex;
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
 
 .center-menu, .logo{
     align-self: center;
@@ -53,24 +71,21 @@ ul{
 .center-menu{
     margin-right: 20rem;
     margin-left: 30rem;
+    position: relative;
+    top:0;
 }
 .logo{
     max-height: 100%;
+    margin-left: 6.5rem;
 }
 
 
-.menu-layout{
-    width: 100%;
-    justify-content: space-between;
-    display: flex;
-}
 
-.right-menu{
-  align-items: flex-start;
-}
+
+
 .center-layout{
     text-align: center;
-    font-family: 'Amiri-Regular';
+    font-family: 'Amiri', serif;
 }
 .top-sub-title{
     font-size: 1.5vw;
@@ -87,20 +102,23 @@ ul{
 }
 
 .bottom-layout{
-    display: flex;
-    justify-content: space-between;
     font-size: 1vw;
-    margin-bottom: 10rem;
-
+    justify-content: center;
+    display: flex;
+    padding-bottom:6em;
+    margin:0 auto;
+    max-width: 1920px;
 }
+
 .main-title-layout{
     margin-bottom:6em;
+    z-index: 10;
 }
 .main-title{
     color: #a68164;
     font-size: 4.5rem;
     text-align:center;
-    font-family: 'Amiri-Regular';
+    font-family: 'Amiri', serif;
 }
 
 .main-sub-title{
@@ -115,7 +133,6 @@ ul{
 .special-offers-layout{
     background-color:#18251b;
     padding-top: 20em;
-    padding-bottom: 85em;
     margin-top: 100rem;
 
 }
@@ -161,13 +178,27 @@ ul{
 .preview-layout{
     margin-top: 20rem;
     position: relative;
+    /* border:3px orange solid; */
+
 }
 
 .preview-layout-inner{
+    /* border:3px mediumspringgreen solid; */
     display: flex;
     justify-content: space-between;
-    position: absolute;
   
+}
+.white-bg{
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    position: absolute;
+    /* border: violet 3px solid; */
+}
+.preview-right-img-layout{
+    display: flex;
+    align-items: center;
 }
 
 .preview-img{
@@ -175,15 +206,33 @@ ul{
     margin-right: 5rem;
     margin-bottom: 10rem;
 }
+.preview-left-img{
+    z-index:10;
+}
 .preview-right{
+    /* border:5px aqua solid; */
     display: flex;
     margin-right: 20rem;
+    position: absolute;
+    right:0;
 }
 .preview-right-right-section{
     text-align:right
 }
 .preview-right-txt-section{
-    margin-right: 8rem;
+    padding-right: 5rem;
+    /* background-color: khaki; */
+}
+.preview-right-right-txt{
+    margin-top: 20rem;
+}
+.preview-right-right-txt div:not(.white-line){
+    margin-top: 4rem;
+}
+.white-line{
+    border: white solid 1px;
+    width: 4rem;
+
 }
 .right-title{
     font-size: 8rem;
@@ -192,6 +241,8 @@ ul{
 .right-sub-title{
     color:#808683;
     font-size: 1.6rem;
+    font-family: 'NotoSansCJKkr-DemiLight';
+    margin-bottom: 2rem;
 }
 .active-txt{
     color: white;
@@ -221,7 +272,7 @@ ul{
 }
 
 .membership-component{
-    text-align: center;
+    text-align: center; 
     padding:0 10rem;
 }
 .membership-title{
@@ -234,6 +285,12 @@ ul{
     font-size: 1.8rem;
     color: #7c7c7c;
     font-family: 'NotoSansCJKkr-DemiLight';
+}
+.white-bg-hills{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 450px;
 }
 .hills-btn{
     text-align: center;
@@ -249,9 +306,13 @@ ul{
     margin-top: 11rem;
     display: flex;
     flex-direction: column;
+    background-color: #18251b;
+    position: relative;
+
 
 }
 .promotion-component-layout{
+    z-index: 10;
     display: flex;
     justify-content: center;
 }
@@ -358,6 +419,7 @@ ul{
 .crousel-top-txt{
    color:#a68164;
    font-size: 2.1rem;
+   font-family: 'NotoSansCJKkr-DemiLight';
 }
 .crousel-title{
     font-size: 6rem;
@@ -385,21 +447,26 @@ font-family: 'NotoSansCJKkr-Light';
 .news-layout-inner{
     display: flex;
     justify-content: center;
+    flex-direction: column;  
+    align-items: center;  
+}
+.news-layout-inner-inner{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    
     border-bottom: #38423b solid 1px;
     margin-bottom: 4.5rem;
 
 }
 
 
-
 .news-left{
     color: #959595;
+    justify-content: center;
 }
 .news-d{
     font-size: 5.3rem;
-    
+    line-height: 0.9em;
 }
 .news-y-m{
     font-size: 1.7rem;
@@ -408,6 +475,11 @@ font-family: 'NotoSansCJKkr-Light';
 .news-right{
     color: #767676;
     margin-left: 6.5rem;
+    display: flex;
+    align-items: center;
+}
+.news-right-left{
+    margin-right: 15rem;
 }
 .news-right-title{
     color: white;
@@ -417,8 +489,20 @@ font-family: 'NotoSansCJKkr-Light';
 .news-right-sub-title{
     font-size: 1.5rem;
     font-family: 'NotoSansCJKkr-Light';
+    margin-top: 1.5rem;
 }
-
+.news-btn{
+justify-content: center;
+display: flex;
+align-items: center;
+margin-top: 5rem;
+margin-bottom: 18rem;
+}
+.news-view-more{
+    color: white;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+}
 .hotel-layout{
     display: flex;
 
